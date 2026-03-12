@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2f3239;
+    color: white;
+}
+
+/* Head */
+
+.main-head {
+    text-align: center;
+   padding-top: 20px;
+}
+
+.sub-main {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(184, 35, 35);
+}
+
+.head-box {
+    border-bottom: 2px solid rgb(218, 216, 216);
+    background-color: #1E2025;
+}
+
+/* hero section */
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+
+.common-box {
+    height: 35vh;
+    width: 20%;
+    /* border: 2px solid transparent; */
+    color: white;
+    text-decoration: none;
+    background-color: #0f766e;
+    border-radius: 10px;
+}
+
+img{
+    height: 175px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.branch {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.2rem;
+}
+
+/* message */
+
+.message p{
+    height: 50px;
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+    padding: 12px;
+}
