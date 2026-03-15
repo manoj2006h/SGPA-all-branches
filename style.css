@@ -74,7 +74,9 @@ img{
 
 /* responsiveness */
 
-@media (max-width: 992px) {
+/* ===== Responsive + Smaller Boxes (All in One) ===== */
+
+@media (max-width: 1200px) {
 
 .hero {
     flex-wrap: wrap;
@@ -83,32 +85,45 @@ img{
 }
 
 .common-box {
-    width: 45%;   /* 2 cards per row */
+    width: 18%;
     margin-bottom: 20px;
 }
 
 img {
-    height: auto;
-}
-
-.branch {
-    margin-top: 5%;
+    height: 150px;
 }
 
 }
+
+/* ===== Tablet ===== */
+
+@media (max-width: 992px) {
+
+.common-box {
+    width: 30%;
+}
+
+img {
+    height: 140px;
+}
+
+}
+
+/* ===== Mobile ===== */
 
 @media (max-width: 600px) {
 
 .hero {
     margin-top: 20%;
+    justify-content: center;
 }
 
 .common-box {
-    width: 90%;   /* 1 card per row */
+    width: 70%;
 }
 
 img {
-    height: auto;
+    height: 130px;
 }
 
 .main-head {
@@ -126,7 +141,17 @@ img {
 
 }
 
+/* ===== Small Mobile ===== */
+
 @media (max-width: 400px) {
+
+.common-box {
+    width: 85%;
+}
+
+img {
+    height: 120px;
+}
 
 .main-head {
     font-size: 1.2rem;
