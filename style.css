@@ -71,3 +71,73 @@ img{
     font-size: 1.3rem;
     color: black;
 }
+
+/* responsiveness */
+
+@media (max-width: 992px) {
+
+.hero {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.common-box {
+    width: 45%;   /* 2 cards per row */
+    margin-bottom: 20px;
+}
+
+img {
+    height: auto;
+}
+
+.branch {
+    margin-top: 5%;
+}
+
+}
+
+@media (max-width: 600px) {
+
+.hero {
+    margin-top: 20%;
+}
+
+.common-box {
+    width: 90%;   /* 1 card per row */
+}
+
+img {
+    height: auto;
+}
+
+.main-head {
+    font-size: 1.4rem;
+}
+
+.sub-main {
+    font-size: 1rem;
+}
+
+.message p {
+    padding: 20px;
+    font-size: 1rem;
+}
+
+}
+
+@media (max-width: 400px) {
+
+.main-head {
+    font-size: 1.2rem;
+}
+
+.sub-main {
+    font-size: 0.9rem;
+}
+
+.branch {
+    font-size: 1rem;
+}
+
+}
