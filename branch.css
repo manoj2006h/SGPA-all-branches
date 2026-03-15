@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    border: border-box;
+    list-style: none;
+}
+
+/* navbar */
+
+.navbar {
+    border-bottom: 1px solid gray;
+    background-color: red;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content {
+    font-size: 2rem;
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.tables {
+    margin-top: 130px;
+    font-size: 1rem;
+}
+
+
+
+.tables table th {
+    background-color: #009879;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    /* border-radius: 10px; */
+}
+
+.credits {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.tables th ,
+.tables td {
+    padding: 12px 15px;
+}
+
+/* Make the Marks column wider */
+.tables table th:nth-child(3),
+.tables table td:nth-child(3) {
+    width: 300px;   /* Adjust width as needed */
+}
+
+/* Make the input fields wider */
+.tables table td:nth-child(3) input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #6a1bbd;
+    transform: scale(1.05);
+}
+
+ /* color */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #373a3e;   /* soft light gray */
+    color: #111827;
+}
+.navbar {
+    background-color: #1e2025;   /* deep academic blue */
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.tables table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.tables table th {
+    background-color: #0F766E;   /* muted teal */
+    color: white;
+    font-weight: 600;
+}
+.submit-btn {
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #162d6b;
+}
+
+
+/* submit botton */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background-color: #3B82F6;   /* Accent blue */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2563EB;
+    transform: scale(1.05);
+}
+
+.result h2 {
+    color: white;
+}
+
+/* Responsive */
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Make table scrollable on small screens */
+.tables {
+    width: 95%;
+    max-width: 1000px;
+}
+
+.tables table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+    .navbar {
+        font-size: 1.2rem;
+        height: 55px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .tables {
+        margin-top: 100px;
+        font-size: 0.95rem;
+        overflow-x: auto;   /* Enables horizontal scroll if needed */
+    }
+
+    .tables table th,
+    .tables table td {
+        padding: 8px;
+    }
+
+    .tables table th:nth-child(3),
+    .tables table td:nth-child(3) {
+        width: 180px;
+    }
+
+    .tables table td:nth-child(3) input {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+
+    .nav-content {
+        font-size: 1rem;
+    }
+
+    .tables {
+        font-size: 0.85rem;
+    }
+
+    .tables table th:nth-child(3),
+    .tables table td:nth-child(3) {
+        width: 150px;
+    }
+
+    .submit-btn {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+}
